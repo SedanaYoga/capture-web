@@ -2,6 +2,7 @@
 import AboutUs from "./pages/AboutUs";
 import OurWorks from "./pages/OurWorks";
 import ContactUs from "./pages/ContactUs";
+import MovieDetail from "./pages/MovieDetail";
 // Import Global Style
 import GlobalStyle from "./components/GlobalStyle";
 // Import Components
@@ -18,10 +19,13 @@ function App() {
         <Route path="/" exact>
           <AboutUs />
         </Route>
-        <Route path="/work">
+        <Route path="/work" exact>
           <OurWorks />
         </Route>
-        <Route path="/contact">
+        <Route path="/work/:id">
+          <MovieDetail />
+        </Route>
+        <Route path="/contact" exact>
           <ContactUs />
         </Route>
       </Switch>
