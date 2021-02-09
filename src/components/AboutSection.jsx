@@ -1,33 +1,34 @@
 import React from "react";
 // Import Image
 import home1 from "../img/home1.png";
-// Import Styled
-import styled from "styled-components";
+// Import style
 import { About, Description, Hide, Image } from "../styles";
+// Import framer motion
+import { motion } from "framer-motion";
 
 function AboutSection() {
   return (
     <About>
       <Description>
-        <div className="title">
+        <motion.div className="title">
           <Hide>
-            <h2>We want to make</h2>
+            <motion.h2>We want to make</motion.h2>
           </Hide>
           <Hide>
-            <h2>
+            <motion.h2>
               your <span>dreams</span>
-            </h2>
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2>come true.</h2>
+            <motion.h2>come true.</motion.h2>
           </Hide>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique,
-            voluptate temporibus tenetur in quae perspiciatis harum laborum
-            velit expedita deserunt?
-          </p>
-          <button>Contact Us</button>
-        </div>
+        </motion.div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique,
+          voluptate temporibus tenetur in quae perspiciatis harum laborum velit
+          expedita deserunt?
+        </p>
+        <button>Contact Us</button>
       </Description>
       <Image>
         <img src={home1} alt="home1" />

@@ -63,7 +63,7 @@ const Faq = styled(About)`
   }
   h2 {
     padding-bottom: 2rem;
-    font-weight: lighter;
+    font-weight: normal;
   }
   .faq-line {
     background: #cccccc;
