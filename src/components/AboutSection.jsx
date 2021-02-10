@@ -7,6 +7,9 @@ import { About, Description, Hide, Image } from "../styles";
 import { motion } from "framer-motion";
 // Import animation
 import { titleAnim, fade, photoAnim } from "../animations";
+// Import Components
+import Wave from "./Wave";
+
 function AboutSection() {
   return (
     <About>
@@ -34,6 +37,7 @@ function AboutSection() {
       <Image>
         <motion.img variants={photoAnim} src={home1} alt="home1" />
       </Image>
+      <Wave />
     </About>
   );
 }
